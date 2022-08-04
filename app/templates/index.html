@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Stereo Zombies</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='assets/favicon.jpg') }}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static',filename='/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url_for('home') + '#page-top'}}"><img src="{{ url_for('static',filename='assets/img/navbar-logo.jpg') }}" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('model')}}">Model</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('home') + '#technology'}}">Technology</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('home') + '#timeline'}}">Timeline</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('home') + '#team'}}">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('home') + '#info'}}">About Our Model</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('home') + '#contactForm'}}">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Stereo Zombies - Zombie Typer</div>
+                <div class="masthead-heading text-uppercase">AI Powered Short Story Generator</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="{{ url_for('model')}}">Try Our Model</a>
+            </div>
+        </header>
+        <!-- Technology-->
+        <section class="page-section" id="technology">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Technology</h2>
+                    <h3 class="section-subheading text-muted">Some info about the technology this project uses</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-robot fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">GPT-2</h4>
+                        <p class="text-muted">AI model made by OPENAI</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">PYTHON</h4>
+                        <p class="text-muted">Programming language used to train models, handle data and host site</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-robot fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">AITEXTGEN</h4>
+                        <p class="text-muted">Python library that allows finetuning of GPT-2 models</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">FLASK</h4>
+                        <p class="text-muted">A lightweight framework used to create web applications quickly and easily</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-robot fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">NLP</h4>
+                        <p class="text-muted">Natural language processing (NLP) is the ability of a computer program to understand human language as it is spoken and written</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">HTML, CSS, JS</h4>
+                        <p class="text-muted">Used to build the user interface which allows users to generate text</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Timeline-->
+        <section class="page-section bg-light" id="timeline">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Timeline</h2>
+                    <h3 class="section-subheading text-muted">Timeline mapping the process of our project's development</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ url_for('static',filename='assets/img/about/ai-camp.jpg') }}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Week 1</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    During week one we learns the basic of machine learning and planning out and organized out ideas for the project. First we practice and learned how use use NLP and aitextgen in order to collect data, train our models, and generate the text based off that model. 
+Then we began to brainstorm what projects that could would be fun to do and ended up deciding on a story generator.
+After generating our ideas out team write out what the specs of this product would look like.
+This included what resources we would need like colab and cocalc along other resources like aitextgen, NLTK, and the GPT-2 neo model which is what we used for our models.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ url_for('static',filename='assets/img/about/ai-camp.jpg') }}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Week 2</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    During week two we mainly focused on training our model and gathering data for those models.
+To start off the week we had a few lesson of how to feed data to our models.
+Then we went off on our own to find and scrape for data set of different genres of potential stories we could use onto the website.
+After we found data sets to train out models on we spent 30-50 minutes on each model training and would tweak to data input or the training step to improve the fluency of the generated text as much as we could.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ url_for('static',filename='assets/img/about/ai-camp.jpg') }}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Week 3</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                   After we got out models trains we began to learn how to properly use html, css, and bootstrap(a css framework). On this website we go those the steps of the project and tell people about who we are and what we made. We also fully incorporate backend and frontend so that when given a prompt from the site it will generate a story for the user.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                   
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                <a class="text-uppercase" href="{{ url_for('model')}}">Try<br>Our<br>Model</a>
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section " id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                </div>
+                <div class="row">
+                    <div class="">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{ url_for('static',filename='assets/img/team/sharath.jpg') }}" alt="..." />
+                            <h4>Sai Sharath Himmath</h4>
+                            <p class="text-muted">Instructor</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{ url_for('static',filename='assets/img/team/Aiden_Bishop.jpg') }}" alt="..." />
+                            <h4>Aiden M Bishop</h4>
+                            <p class="text-muted">I am going to be a senior at Millard West High school in Omaha Nebraska.  I enjoy coding and reading in my free time. I have a lot of passions in the STEM field and in the future am planning on going to a computer science path.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{ url_for('static',filename='assets/img/team/alexander.jpg') }}" alt="..." />
+                            <h4>Alexander Higgins</h4>
+                            <p class="text-muted">I am going to be a senior at Cherry Hill High School East. I like learning about programming and I.T. in my free time. I plan on pursing a bachelors degree in computer science and becoming a software developer.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{ url_for('static',filename='assets/img/team/Graham.jpeg') }}" alt="..." />
+                            <h4>Graham R Goodwin</h4>
+                            <p class="text-muted"> Junior at Reading memorial high school. Varsity track and cross country athlete. And avid enjoyer of exploring the out doors with my dog. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{ url_for('static',filename='assets/img/team/khadija.jpeg') }}" alt="..." />
+                            <h4>Khadija Tahira</h4>
+                            <p class="text-muted">Senior at Foundation Public School A level College, in Pakistan. I am an avid reader, an active participant in community services to give back to the community. I also have an interest in the field of computer sciences and I plan to pursue it in the future.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{ url_for('static',filename='assets/img/team/timothy.jpeg') }}" alt="..." />
+                            <h4>Timothy Prestosh</h4>
+                            <p class="text-muted">I am going to be a junior at Parkland High School. I enjoy learning about computer science and cyber security. I plan on going to college for one of those two things.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{ url_for('static',filename='assets/img/team/varun.png') }}" alt="..." />
+                            <h4>Varun Varma Kosuri</h4>
+                            <p class="text-muted">I am going to be a senior at Conant High School.I enjoy coding and playing tennis and in my free time I volunteer. I am planning to go into the computer science field mainly looking into cybersecurity or web development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-light" id="info">
+            <div class="container px-4 px-lg-5">
+                  <!-- Heading Row-->
+                  <div class="info-head">
+                      <div class=""><img class="img-fluid rounded mb-4 mb-lg-0" src="{{ url_for('static',filename='assets/img/info/zombie-hand.jpg') }}" alt="..." /></div>
+                      <div class="">
+                          <h1 class="font-weight-light">Info About Our Model</h1>
+                          <a class="btn btn-primary" href="{{ url_for('model')}}">Try Our Model</a>
+                      </div>
+                  </div>
+                  <!-- Call to Action-->
+                  <div class="card text-white bg-secondary my-5 py-4 text-center">
+                      <div class="card-body"><p class="text-white m-0">Learn more about the ins and outs of Zombie Typer!</p></div>
+                  </div>
+                  <!-- Content Row-->
+                  <div class="row gx-4 gx-lg-5">
+                      <div class="col-md-4 mb-5">
+                          <div class="card h-100">
+                              <div class="card-body">
+                                  <h2 class="card-title">Genres</h2>
+                                  <p class="card-text">We have 5 different genres including horror, sci-fi, bedtime stories, russian stories and fairy-tales.</p>
+                              </div>
+                              <div class="card-footer"><a class="btn btn-primary btn-sm" href="{{ url_for('model')}}">More Info</a></div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 mb-5">
+                          <div class="card h-100">
+                              <div class="card-body">
+                                  <h2 class="card-title">How It Works</h2>
+                                  <p class="card-text">We trained a GPT-2 model for each genre using AITEXTGEN. We trained the models using datasets from kaggle.</p>
+                              </div>
+                              <div class="card-footer"><a class="btn btn-primary btn-sm" href="{{ url_for('model')}}">More Info</a></div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 mb-5">
+                          <div class="card h-100">
+                              <div class="card-body">
+                                  <h2 class="card-title">Language & Frameworks</h2>
+                                  <p class="card-text">We built this using HTML, CSS & JS for the frontend and a python framework, flask for the backend.</p>
+                              </div>
+                              <div class="card-footer"><a class="btn btn-primary btn-sm" href="{{ url_for('model')}}">More Info</a></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+         </section>
+      <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Or Visit <a  class="contact-text" href="https://www.ai-camp.org/" target="about_blank">the AI CAMP Website</a></h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">AI CAMP 2022</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.ai-camp.org/" target="about_blank" aria-label="Site"><i class="fas fa-globe"></i></a>
+                      <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/aicampdotorg/?view_public_for=849707208732789" target="about_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                      <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/aicampofficial/" target="about_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                      <a class="btn btn-dark btn-social mx-2" href="https://www.tiktok.com/@aicamp" target="about_blank" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                      <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/channel/UCUGJzo5EwViLGpAgYphNyzg" target="about_blank" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../static/js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
